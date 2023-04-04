@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Автосервис</title>
+  </head>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="website icon" type="png" href="wing.png">
+
+<body>
+	
+  <header>
+    <h1>Система управления автосервисом</h1>
+  </header>
+
+  <div class="flex">
+
+    <div class="reg-card">
+
+	  <form>
+		  <label for="fio" class="text">Ф.И.О.:</label>
+		  <input type="text" id="fio" class="in-1"><br><br>
+
+		  <label for="car" class="text">Марка и модель автомобиля:</label>
+		  <input type="text" id="car" class="in-2"><br><br>
+
+		  <label for="date" class="text">Дата обращения:</label>
+		  <input type="date" id="date" class="in-3"><br><br>
+
+		  <label for="reason" class="text">Причина обращения:</label>
+		  <input type="text" id="reason" class="in-4"><br><br>
+
+		  <label for="cost" class="text">Стоимость ремонта:</label>
+		  <input type="number" id="cost" class="in-5"><br><br>
+
+		  <label for="delivery" class="text">Дата передачи автомобиля:</label>
+		  <input type="date" id="delivery" class="in-6"><br><br>
+
+		  <button type="button" onclick="addRecord()" class="btn">Добавить запись</button>
+	  </form>
+
+    </div> <br>
+
+	<h2>История обращений</h2> <br>
+	<table id="records">
+		<thead>
+			<tr>
+				<th>Ф.И.О.</th>
+				<th>Марка и модель автомобиля</th>
+				<th>Дата обращения</th>
+				<th>Причина обращения</th>
+				<th>Стоимость ремонта</th>
+				<th>Дата передачи автомобиля</th>
+				<th>Действия</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
